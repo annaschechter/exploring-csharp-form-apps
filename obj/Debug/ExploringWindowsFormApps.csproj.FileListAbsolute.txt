@@ -1,1 +1,9 @@
 c:\users\anna\desktop\coding\ExploringWindowsFormApps\bin\Debug\ExploringWindowsFormApps.exe.config
+c:\users\anna\desktop\coding\ExploringWindowsFormApps\obj\Debug\ExploringWindowsFormApps.csprojResolveAssemblyReference.cache
+c:\users\anna\desktop\coding\ExploringWindowsFormApps\obj\Debug\ExploringWindowsFormApps.Form1.resources
+c:\users\anna\desktop\coding\ExploringWindowsFormApps\obj\Debug\ExploringWindowsFormApps.Properties.Resources.resources
+c:\users\anna\desktop\coding\ExploringWindowsFormApps\obj\Debug\ExploringWindowsFormApps.csproj.GenerateResource.Cache
+c:\users\anna\desktop\coding\ExploringWindowsFormApps\bin\Debug\ExploringWindowsFormApps.exe
+c:\users\anna\desktop\coding\ExploringWindowsFormApps\bin\Debug\ExploringWindowsFormApps.pdb
+c:\users\anna\desktop\coding\ExploringWindowsFormApps\obj\Debug\ExploringWindowsFormApps.exe
+c:\users\anna\desktop\coding\ExploringWindowsFormApps\obj\Debug\ExploringWindowsFormApps.pdb

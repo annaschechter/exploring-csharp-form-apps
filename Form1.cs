@@ -16,5 +16,10 @@ namespace ExploringWindowsFormApps
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            richTextBox1.AppendText("The button has been clicked\r\n");
+        }
     }
 }
