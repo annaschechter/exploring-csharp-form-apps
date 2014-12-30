@@ -35,6 +35,8 @@ namespace ExploringWindowsFormApps
         private void NavigateToPage()
         {
             webBrowser1.Navigate(textBox1.Text);
+            button1.Enabled = false;
+            textBox1.Enabled = false;
         }
 
         private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
@@ -43,6 +45,21 @@ namespace ExploringWindowsFormApps
             {
                 NavigateToPage();
             }
+        }
+
+        private void webBrowser1_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
+        {
+            button1.Enabled = true;
+            textBox1.Enabled = true;
+        }
+
+        private void webBrowser1_ProgressChanged(object sender, WebBrowserProgressChangedEventArgs e)
+        {
+            if(e.CurrentProgress > 0 && e.MaximumProgress > 0)
+            {
+                 toolStripProgressBar1.ProgressBar.Value = (int)(e.CurrentProgress * 100 / e.MaximumProgress);
+            }
+          
         }
 
     }
