@@ -17,14 +17,33 @@ namespace ExploringWindowsFormApps
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            richTextBox1.AppendText("The button has been clicked\r\n");
+            this.Close();
         }
 
-        private void button1_MouseEnter(object sender, EventArgs e)
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            richTextBox1.AppendText("The mouse has entered the button\r\n");
+            MessageBox.Show("This programm was made by Anna");
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            NavigateToPage();
+        }
+
+        private void NavigateToPage()
+        {
+            webBrowser1.Navigate(textBox1.Text);
+        }
+
+        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)ConsoleKey.Enter)
+            {
+                NavigateToPage();
+            }
+        }
+
     }
 }
