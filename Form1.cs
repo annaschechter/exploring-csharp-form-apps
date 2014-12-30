@@ -21,5 +21,10 @@ namespace ExploringWindowsFormApps
         {
             richTextBox1.AppendText("The button has been clicked\r\n");
         }
+
+        private void button1_MouseEnter(object sender, EventArgs e)
+        {
+            richTextBox1.AppendText("The mouse has entered the button\r\n");
+        }
     }
 }
